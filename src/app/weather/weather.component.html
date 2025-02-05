@@ -1,0 +1,11 @@
+@if(weatherData() && cityData()){
+<h2>🌍 {{  cityData().display_name }}</h2>
+<div class="weather-info">
+    <div class="icon">{{ weatherIcon() }}</div>
+    <div class="details">
+        <p>🌈 Conditions: {{ weatherConditions() }}</p>
+        <p>🌡 Temperature: {{ weatherData().temperature }}°C</p>
+        <p>💨 Wind Speed: {{ weatherData().windspeed }} km/h</p>
+    </div>
+</div>
+}
